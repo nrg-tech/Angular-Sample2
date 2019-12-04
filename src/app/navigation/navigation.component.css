@@ -1,4 +1,13 @@
 .example-container {
   height: 95%;
   margin: 10px;
+  padding-top: -20px;
+} 
+
+.mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%  !important;
 }

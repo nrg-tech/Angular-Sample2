@@ -1,4 +1,6 @@
-<mat-toolbar color="warn" style="background-color: #182A36;">
+<!-- header start -->
+
+  <mat-toolbar color="warn" style="background-color: #182A36;">
   <mat-toolbar-row>
     <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
       <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
@@ -8,10 +10,13 @@
     </span>
   </mat-toolbar-row>
 </mat-toolbar>
+<!-- header end -->
+<br/><br/>
+
 <mat-sidenav-container class="example-container">
   <mat-sidenav #drawer mode="side" opened role="navigation">
     
-    <mat-nav-list style="width: 300px">
+    <mat-nav-list style="width: 250px">
 
       <ng-container *ngFor="let item of menuItems">
           <mat-list-item (click)="item.isExpanded = !item.isExpanded">
@@ -57,7 +62,9 @@
         NRG
     </div>
     
-    
+    <br/><br/><br/><br/><br/><br/>
+
+
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

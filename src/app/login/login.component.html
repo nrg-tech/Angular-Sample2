@@ -13,6 +13,9 @@
 <div id="back-color">
     <br/><br/><br/><br/><br/><br/>
 
+
+
+    
     <form name="form" (ngSubmit)="f.form.valid && onClickSubmit()" #f="ngForm" novalidate> 
                       
         <div id="login-box">
@@ -23,7 +26,9 @@
                      <br/>
                      <div class="col-lg-2"></div>
                             <div class="col-lg-9" id="padding-inputbox">
-                              <div class="row">
+                              
+                              
+                                <div class="row">
         
                                     <div id="icon-box">
                                       <i class="fa fa-user-circle-o" aria-hidden="true" id="icon"></i>
@@ -31,7 +36,7 @@
                                  <!--   <input type="text" placeholder="Username" style="width: 285px;" 
                                     name="currentusername" [(ngModel)]="model.currentusername" #currentusername="ngModel" required>
                                     -->
-                                    <input type="text" placeholder="Username/Email" id="typebox-with"  name="currentusername" [(ngModel)]="model.currentusername" #currentusername="ngModel" required/>
+                                    <input type="text" placeholder="Username/Email"   name="currentusername" [(ngModel)]="model.currentusername" #currentusername="ngModel" required/>
                                     <div *ngIf="f.submitted && !currentusername.valid" class="help-block">Username is required</div>
     
                                
