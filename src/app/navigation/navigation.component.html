@@ -6,7 +6,7 @@
       <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
     </button>
     <span>
-        <img src="./assets/images/nrg_logo.png"  id="logo-img"/>
+        <img src="./assets/images/nrg_logo.png"  [routerLink]="['/landingpage']"/>
     </span>
   </mat-toolbar-row>
 </mat-toolbar>
@@ -22,7 +22,11 @@
             <!--  <img width="20" height="20" src={{menuItemsIcons[i].name}} />
 -->
               <a mat-list-item routerLink= {{item.pageName}} > {{item.name}}</a>
-             <mat-icon mat-list-icon>{{menuItemsIcons[i].name}}</mat-icon> 
+             <mat-icon mat-list-icon>
+              
+               <img width="20" height="20" src={{menuItemsIcons[i].name}} />
+
+             </mat-icon> 
 
 
             </mat-list-item>
@@ -53,18 +57,10 @@
         NRG
     </div>
     
-    <br/><br/><br/><br/><br/><br/>
+    <br/>
 
 
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
-<!--<mat-drawer-container class="example-container">
-  <mat-drawer #drawer mode="side" opened>
-    <a mat-list-item routerLink='/first'>First Component</a>
-    <a mat-list-item routerLink='/second'>Second Component</a>
-  </mat-drawer>
-  <mat-drawer-content>
-    <router-outlet></router-outlet>
-  </mat-drawer-content>
-</mat-drawer-container>-->
+

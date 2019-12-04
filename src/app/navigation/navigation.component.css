@@ -1,5 +1,5 @@
 .example-container {
-  height: 95%;
+  height: 90%;
   margin: 10px;
   padding-top: -20px;
 } 
@@ -10,4 +10,25 @@
   left: 0;
   z-index: 2;
   width: 100%  !important;
+}
+
+.mat-drawer {
+  background-color:#243C48;
+  color: white;
+}
+
+.mat-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 16px;
+  position: relative;
+  height: inherit;
+  color:white;
+}
+
+.mat-icon-button .mat-icon, .mat-icon-button i {
+  line-height: 24px;
+  color: white;
 }

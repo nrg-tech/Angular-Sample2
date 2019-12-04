@@ -53,7 +53,7 @@ menuItemsIcons:MenuItem[];
 
 
     this.menuItemsIcons = [
-  /*    new MenuItem("./assets/images/dashboard.png","/landingpage"),
+      new MenuItem("./assets/images/dashboard.png","/landingpage"),
       new MenuItem("./assets/images/employee.png","employeelist"),
       new MenuItem("./assets/images/vendor-customer.png", "Customervendoradd"),
       new MenuItem("./assets/images/category-product.png", "Productcategoryadd"),
@@ -65,10 +65,10 @@ menuItemsIcons:MenuItem[];
       new MenuItem("./assets/images/usermgt.png","usermgtadd"),
       new MenuItem("./assets/images/logout.png","login"),
 
-*/
 
+/*
 new MenuItem("home","/landingpage"),
-new MenuItem("people","employeelist"),
+new MenuItem("./assets/images/employee.png","employeelist"),
 new MenuItem("person", "Customervendoradd"),
 new MenuItem("home", "Productcategoryadd"),
 new MenuItem("shopping_cart","purchaseadd"),
@@ -79,7 +79,7 @@ new MenuItem("home","allreport"),
 new MenuItem("contacts","usermgtadd"),
 new MenuItem("home","login"),
 
-
+*/
     ]
 
   }
