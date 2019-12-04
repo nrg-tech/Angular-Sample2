@@ -11,6 +11,7 @@ import { RouterModule, Routes, Router ,ActivatedRoute} from "@angular/router";
 })
 export class NavigationComponent implements OnInit {
 menuItems: MenuItem[];
+menuItemsIcons:MenuItem[];
 @ViewChild('sidenav',{ read: true, static: false }) sidenav: MatSidenav;
 
   public menu1 = false;
@@ -51,6 +52,35 @@ menuItems: MenuItem[];
     ]
 
 
+    this.menuItemsIcons = [
+  /*    new MenuItem("./assets/images/dashboard.png","/landingpage"),
+      new MenuItem("./assets/images/employee.png","employeelist"),
+      new MenuItem("./assets/images/vendor-customer.png", "Customervendoradd"),
+      new MenuItem("./assets/images/category-product.png", "Productcategoryadd"),
+      new MenuItem("./assets/images/circle-cropped.png","purchaseadd"),
+      new MenuItem("./assets/images/sales.png","salesorder"),
+      new MenuItem("./assets/images/finance.png","pettycashadd"),
+      new MenuItem("./assets/images/stock.png","stockadd"),
+      new MenuItem("./assets/images/reports.png","allreport"),
+      new MenuItem("./assets/images/usermgt.png","usermgtadd"),
+      new MenuItem("./assets/images/logout.png","login"),
+
+*/
+
+new MenuItem("home","/landingpage"),
+new MenuItem("people","employeelist"),
+new MenuItem("person", "Customervendoradd"),
+new MenuItem("home", "Productcategoryadd"),
+new MenuItem("shopping_cart","purchaseadd"),
+new MenuItem("home","salesorder"),
+new MenuItem("home","pettycashadd"),
+new MenuItem("home","stockadd"),
+new MenuItem("home","allreport"),
+new MenuItem("contacts","usermgtadd"),
+new MenuItem("home","login"),
+
+
+    ]
 
   }
 

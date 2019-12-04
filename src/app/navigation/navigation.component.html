@@ -17,26 +17,17 @@
   <mat-sidenav #drawer mode="side" opened role="navigation">
     
     <mat-nav-list style="width: 250px">
-
-      <ng-container *ngFor="let item of menuItems">
-          <mat-list-item (click)="item.isExpanded = !item.isExpanded">
-            
+      <ng-container *ngFor="let item of menuItems let i=index">
+          <mat-list-item>  
+            <!--  <img width="20" height="20" src={{menuItemsIcons[i].name}} />
+-->
               <a mat-list-item routerLink= {{item.pageName}} > {{item.name}}</a>
-              <mat-icon mat-list-icon>home</mat-icon>
-              <!-- <mat-icon class="menu-button" [ngClass]="{'rotated' : item.isExpanded}"> {{item.iconType }} </mat-icon> -->
+             <mat-icon mat-list-icon>{{menuItemsIcons[i].name}}</mat-icon> 
+
+
             </mat-list-item>
-
-
-            <!-- <div class="submenu" [ngClass]="{'expanded' : item.isExpanded}" *ngIf="item.isExpanded">
-              <div *ngFor="let subItem of item.subItems">
-                <a mat-list-item routerLink= {{subItem.pageName}} > {{subItem.name}}</a>
-              </div>
-            </div>  -->
-
       </ng-container>
 
-      <!--<a mat-list-item routerLink='/first'>First Component</a>
-      <a mat-list-item routerLink='/second'>Second Component</a> -->
     </mat-nav-list>
   
   
