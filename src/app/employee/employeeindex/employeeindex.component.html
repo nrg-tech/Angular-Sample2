@@ -1,0 +1,54 @@
+<div class="col-lg-3"></div>
+<div class="col-lg-9" >
+        <br/>      
+        <div class="tab">
+          <a class="tablink" routerLink="../employeeadd" >Employee Add</a>
+          <a class="tablink" routerLink="../employeelist" id="defaultOpen">Employee List</a>
+          <a class="tablink" routerLink="../employeeadd" id="defaultOpen">Contract Employee</a>
+          <a class="tablink" routerLink="../employeelist" id="defaultOpen">Employee Report</a>
+        </div>
+        <router-outlet>        
+        </router-outlet>
+              
+</div>
+
+
+
+
+<!-- <div class="col-lg-3"></div>
+<div class="col-lg-9" >
+
+
+      <mat-tab-group  
+      animationDuration="0ms" (click)="tabClick($event)" [selectedIndex]="selectedTabIndex">
+
+<mat-tab label="Add employee" disabled>
+    <ng-template>
+      </ng-template>
+      <app-employeeadd></app-employeeadd>
+
+</mat-tab>
+
+
+
+
+  <mat-tab label="List employee" disabled>
+
+    <app-employeelist></app-employeelist>
+
+  </mat-tab>
+  <mat-tab label="Contract Employee"  disabled>
+      Contract Employee
+  </mat-tab>
+
+  <mat-tab label="Employee report"  disabled>
+      Employee report
+    </mat-tab>
+
+      </mat-tab-group>
+
+
+
+
+      
+    </div> -->

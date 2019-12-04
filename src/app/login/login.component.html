@@ -1,0 +1,80 @@
+<div id="fixed-heder">
+    <div class="fixed-nav-bar">
+            
+        <nav class="navbar navbar-inverse">
+                <div class=" col-xs-6 " id="logo-img"></div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                      
+            </div>
+        </nav>
+    </div>
+</div>
+    
+<div id="back-color">
+    <br/><br/><br/><br/><br/><br/>
+
+    <form name="form" (ngSubmit)="f.form.valid && onClickSubmit()" #f="ngForm" novalidate> 
+                      
+        <div id="login-box">
+                                     <br/><br/>
+                     <alert></alert>
+                      <div id="holediv-padding">
+                     <h2 id="text">Employment Sign In</h2>
+                     <br/>
+                     <div class="col-lg-2"></div>
+                            <div class="col-lg-9" id="padding-inputbox">
+                              <div class="row">
+        
+                                    <div id="icon-box">
+                                      <i class="fa fa-user-circle-o" aria-hidden="true" id="icon"></i>
+                                    </div> 
+                                 <!--   <input type="text" placeholder="Username" style="width: 285px;" 
+                                    name="currentusername" [(ngModel)]="model.currentusername" #currentusername="ngModel" required>
+                                    -->
+                                    <input type="text" placeholder="Username/Email" id="typebox-with"  name="currentusername" [(ngModel)]="model.currentusername" #currentusername="ngModel" required/>
+                                    <div *ngIf="f.submitted && !currentusername.valid" class="help-block">Username is required</div>
+    
+                               
+                               </div>
+                               <br/>
+                               <div class="row">
+                                    <div id="icon-box">
+                                            <i class="fa fa-lock" aria-hidden="true" id="icon2"></i>
+                                    </div> 
+                                    <input type="{{passwordtype}}" placeholder="Password"  id="typebox-with" name="currentpassword" [(ngModel)]="model.currentpassword"  #currentpassword="ngModel"
+                                     required> 
+
+                                     <div *ngIf="f.submitted && !currentpassword.valid" class="help-block">Password is required</div>
+                               </div> 
+
+                               <div class="row">
+                                <input type="checkbox" (click)="showPassword()" value="Show Password" />
+                                <label for="Show Password"  class="forgot">Show Password</label></div>
+
+                            </div>
+                        </div>
+                     <div class="col-lg-1"></div>
+        
+                     <div class="form-group">
+                            <div class="row" class=" col-xs-3 col-lg-6">
+                                <br/>
+                        <!--        <input type="submit" class="btn btn-primary" id="signin-button"> -->
+                           <button [disabled]="loading"   class="btn btn-primary" id="signin-button">Sign In</button>
+        
+                                <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                            </div>
+                            <div class="row" class=" col-xs-1 col-lg-6" id="text-padding">
+                                <br/>
+                                <div class="row">
+                                <input type="checkbox" value="Remember me" id="checkbox-padding" />
+                                <label for="Remember me" class="forgot">Remember me</label></div>
+                                <a (click)="forgetPassword()" class="forgot" id="checkbox-padding">Forget Password ?</a>
+                            </div>
+                        </div>
+             </div>
+             </form>
+             <br/><br/>
+         </div>
+      
+    <!-- Dialouge box -->
+      

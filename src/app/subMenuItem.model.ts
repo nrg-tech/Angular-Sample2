@@ -6,8 +6,5 @@ export class SubMenuItem {
   constructor(name : string, pageName : string){
     this.name = name;
     this.pageName = pageName;
-
-  
-
   }
  }

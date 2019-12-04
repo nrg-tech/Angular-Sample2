@@ -1,0 +1,577 @@
+#back-color{
+    background-color: #33495c;
+    height: auto;
+}
+#new-head{
+    width: 500px;
+    background-color: #182A36;
+}
+#icon-box{
+    background: #615f5f;
+    width: 50px;
+    height: 48px;
+}
+#icon{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 12px;
+}
+#icon2{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0px 1px 16px;
+}
+.forgot{
+    font-size: 11px;
+    font-weight: normal;
+    font-weight: 800;
+    font-family: none;
+}
+.col-lg-9 {
+height: 192px;
+}
+.navbar{
+    margin-bottom: 0px; 
+    height: 100px;
+}
+#fixed-heder{
+    position: fixed;
+    top: -84;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+@media (min-width: 320px) and (max-width: 359px) {
+    #login-box{
+        height: 385px;
+        width: 310px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -30px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+    }
+    #checkbox-padding{
+        margin-left: 175px;
+    }
+    #text-padding{
+        margin-top: -9px;
+    }
+    #typebox-with{
+        width: 240px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+        font-size: 20px;
+    }
+    #holediv-padding{
+        margin-left: 10px;
+    }
+    
+}
+@media (min-width: 359px) and (max-width: 374px) {
+    #login-box{
+        height: 385px;
+        width: 345px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #padding-inputbox{
+        margin: 4px 4px 4px 5px;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-top: -34px;
+        margin-left: -50px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #checkbox-padding{
+        margin-left: 200px;
+    }
+    #text-padding{
+        margin-top: -30px;
+    }
+    #typebox-with{
+        width: 260px;
+    }
+    #text-padding{
+        margin-top: -9px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+        font-size: 23px;
+    }
+    #holediv-padding{
+        margin-left: 10px;
+    }
+}
+@media (min-width: 375px) and (max-width: 409px) {
+    #login-box{
+        height: 385px;
+        width: 365px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #padding-inputbox{
+        margin: 4px 4px 4px 5px;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-top: -34px;
+        margin-left: -50px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #checkbox-padding{
+        margin-left: 200px;
+    }
+    #text-padding{
+        margin-top: -30px;
+    }
+    #typebox-with{
+        width: 285px;
+    }
+    #text-padding{
+        margin-top: -9px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+        font-size: 23px;
+    }
+    #holediv-padding{
+        margin-left: 10px;
+        margin-top: -40px;
+    }
+} 
+@media (min-width: 410px) and (max-width: 470px) {
+    #login-box{
+        height: 385px;
+        width: 365px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #padding-inputbox{
+        margin: 4px 4px 4px 5px;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-top: -34px;
+        margin-left: -50px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #checkbox-padding{
+        margin-left: 200px;
+    }
+    #text-padding{
+        margin-top: -30px;
+    }
+    #typebox-with{
+        width: 285px;
+        height: 40px;
+    }
+    #text-padding{
+        margin-top: -15px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+        font-size: 23px;
+    }
+    #holediv-padding{
+        margin-left: 10px;
+        margin-top: -20px
+    }
+    #icon-box{
+        background: #615f5f;
+        width: 50px;
+        height: 40px;
+    }
+}
+@media (min-width: 471px) and (max-width: 530px) {
+    #login-box{
+        height: 385px;
+        width: 365px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #padding-inputbox{
+        margin: 4px 4px 4px 5px;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-top: -34px;
+        margin-left: -50px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #checkbox-padding{
+        margin-left: 200px;
+    }
+    #text-padding{
+        margin-top: -30px;
+    }
+    #typebox-with{
+        width: 285px;
+        height: 40px;
+    }
+    #text-padding{
+        margin-top: -9px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+        font-size: 23px;
+    }
+    #holediv-padding{
+        margin-left: 10px;
+        margin-top: -20px;
+    }
+    #icon-box{
+        background: #615f5f;
+        width: 50px;
+        height: 40px;
+    }
+}
+@media (min-width: 531px) and (max-width: 539px) {
+    #login-box{
+        height: 455px;
+        width: 430px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #padding-inputbox{
+        margin: 4px 4px 4px 5px;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+        margin-left: 35px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-top: -34px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #checkbox-padding{
+        margin-left: 200px;
+    }
+    #text-padding{
+        margin-top: -30px;
+        margin-left: 70px;
+    }
+    #typebox-with{
+        width: 285px;
+        height: 48px;
+    }
+    #text-padding{
+        margin-top: -9px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+        font-size: 23px;
+    }
+    #holediv-padding{
+        margin-left: 45px;
+        margin-top: -20px;
+    }
+    #icon-box{
+        background: #615f5f;
+        width: 50px;
+        height: 48px;
+    }
+}
+@media (min-width: 540px) and (max-width: 600px) {
+    #login-box{
+        height: 455px;
+        width: 430px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #padding-inputbox{
+        margin: 4px 4px 4px 5px;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+        margin-left: 35px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-top: -34px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #checkbox-padding{
+        margin-left: 200px;
+    }
+    #text-padding{
+        margin-top: -30px;
+        margin-left: 70px;
+    }
+    #typebox-with{
+        width: 285px;
+        height: 48px;
+    }
+    #text-padding{
+        margin-top: -9px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+        font-size: 23px;
+    }
+    #holediv-padding{
+        margin-left: 45px;
+        margin-top: -20px;
+    }
+    #icon-box{
+        background: #615f5f;
+        width: 50px;
+        height: 48px;
+    }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+    #login-box{
+        height: 455px;
+        width: 430px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #padding-inputbox{
+        margin: 4px 4px 4px 5px;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+        margin-left: 35px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-top: -34px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #checkbox-padding{
+        margin-left: 200px;
+    }
+    #text-padding{
+        margin-top: -30px;
+        margin-left: 70px;
+    }
+    #typebox-with{
+        width: 285px;
+        height: 48px;
+    }
+    #text-padding{
+        margin-top: -9px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+        font-size: 23px;
+    }
+    #holediv-padding{
+        margin-left: 45px;
+        margin-top: -20px;
+    }
+    #icon-box{
+        background: #615f5f;
+        width: 50px;
+        height: 48px;
+    }
+}
+@media (min-width: 768px) and (max-width: 810px) and (orientation: landscape) {
+    #login-box{
+        height: 455px;
+        width: 430px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #padding-inputbox{
+        margin: 4px 4px 4px 5px;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+        margin-left: 35px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-top: -34px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #checkbox-padding{
+        margin-left: 200px;
+    }
+    #text-padding{
+        margin-top: -30px;
+        margin-left: 70px;
+    }
+    #typebox-with{
+        width: 285px;
+        height: 48px;
+    }
+    #text-padding{
+        margin-top: -9px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+        font-size: 23px;
+    }
+    #holediv-padding{
+        margin-left: 45px;
+        margin-top: -20px;
+    }
+    #icon-box{
+        background: #615f5f;
+        width: 50px;
+        height: 48px;
+    }
+}
+@media (min-width: 810px) and (max-width: 1024px) and (orientation: landscape) {
+    #login-box{
+        height: 440px;
+        width: 500px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+        margin-left: 68px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -30px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+    }
+    #holediv-padding{
+        margin-left: 10px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+    #login-box{
+        height: 440px;
+        width: 500px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+        margin-left: 68px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -30px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+    }
+    #holediv-padding{
+        margin-left: 10px;
+    }
+}
+@media (min-width: 1281px) and (max-width: 1380px) {
+    #login-box{
+        height: 440px;
+        width: 500px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+        margin-left: 68px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -60px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #typebox-with{
+        width: 285px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+    }
+   
+}
+
+
