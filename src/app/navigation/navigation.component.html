@@ -1,0 +1,51 @@
+<mat-toolbar color="warn">
+  <mat-toolbar-row>
+    <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <span>GGL</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #drawer mode="side" opened role="navigation">
+    
+    <mat-nav-list style="width: 300px">
+
+      <ng-container  *ngFor="let item of menuItems">
+          <mat-list-item (click)="item.isExpanded = !item.isExpanded" class="parent">
+            <span class="full-width"> {{item.name}}</span>
+
+            
+            <mat-icon mat-list-icon>home</mat-icon>
+            <mat-icon class="menu-button" [ngClass]="{'rotated' : item.isExpanded}"> {{item.iconType }} 
+          </mat-icon>
+            </mat-list-item>
+
+
+<div class="submenu" [ngClass]="{'expanded' : item.isExpanded}" *ngIf="item.isExpanded">
+  <div *ngFor="let subItem of item.subItems">
+<a mat-list-item routerLink= {{subItem.pageName}} > {{subItem.name}}</a>
+  </div>
+</div>
+
+      </ng-container>
+
+      <!--<a mat-list-item routerLink='/first'>First Component</a>
+      <a mat-list-item routerLink='/second'>Second Component</a> -->
+    </mat-nav-list>
+  
+  
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<!--<mat-drawer-container class="example-container">
+  <mat-drawer #drawer mode="side" opened>
+    <a mat-list-item routerLink='/first'>First Component</a>
+    <a mat-list-item routerLink='/second'>Second Component</a>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>-->
