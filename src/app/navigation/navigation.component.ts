@@ -1,7 +1,7 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { MenuItem } from '../menuItem.model';
 import { SubMenuItem } from '../subMenuItem.model';
-import { MatSidenav } from '@angular/material';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-navigation',
@@ -10,7 +10,7 @@ import { MatSidenav } from '@angular/material';
 })
 export class NavigationComponent implements OnInit {
 menuItems: MenuItem[];
-@ViewChild('sidenav') sidenav: MatSidenav;
+@ViewChild('sidenav',{ read: true, static: false }) sidenav: MatSidenav;
 
 
   constructor() { }
