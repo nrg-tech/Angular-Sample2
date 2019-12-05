@@ -84,4 +84,8 @@ new MenuItem("home","login"),
 
   }
 
+  showDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
 }

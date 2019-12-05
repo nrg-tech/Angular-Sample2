@@ -1,3 +1,16 @@
+#project-backcolor{
+  background-color: #243C48;
+}
+#back-colorforheader{
+  background-color: #182A36;
+  border-color:#182A36;
+  height: 100px;
+}
+#logo-img{
+  width: 150px;
+  margin-left: 645px;
+  margin-top: -30px;
+}
 
 #black-color{
   background-color: #33495c;

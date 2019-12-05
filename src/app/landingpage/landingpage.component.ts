@@ -22,7 +22,6 @@ export class LandingpageComponent implements OnInit {
   }
 
   ngOnInit() {
-    alert("landingpage");
 
     //localStorage.setItem("notSelected","true");
     //this.notSelected = true;
