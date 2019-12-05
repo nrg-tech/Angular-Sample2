@@ -8,6 +8,15 @@
     <span>
         <img src="./assets/images/nrg_logo.png"  [routerLink]="['/landingpage']"/>
     </span>
+
+
+    <div class="search-container" id="gform">
+        <label class="screen-reader-text" for="s"></label>
+        <input type="text" value="" name="q" id="s">
+        <input type="submit" class="btn fa-input" value="&#xf002;" 
+        style="font-family: FontAwesome;">	
+      </div>
+      
   </mat-toolbar-row>
 </mat-toolbar>
 <!-- header end -->
@@ -19,9 +28,7 @@
     <mat-nav-list style="width: 250px">
       <ng-container *ngFor="let item of menuItems let i=index">
           <mat-list-item>  
-            <!--  <img width="20" height="20" src={{menuItemsIcons[i].name}} />
--->
-              <a mat-list-item routerLink= {{item.pageName}} > {{item.name}}</a>
+         <a mat-list-item routerLink= {{item.pageName}} > {{item.name}}</a>
              <mat-icon mat-list-icon>
               
                <img width="20" height="20" src={{menuItemsIcons[i].name}} />

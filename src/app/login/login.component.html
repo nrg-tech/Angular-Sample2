@@ -28,19 +28,15 @@
                             <div class="col-lg-9" id="padding-inputbox">
                               
                               
-                                <div class="row">
-        
-                                    <div id="icon-box">
-                                      <i class="fa fa-user-circle-o" aria-hidden="true" id="icon"></i>
-                                    </div> 
-                                 <!--   <input type="text" placeholder="Username" style="width: 285px;" 
-                                    name="currentusername" [(ngModel)]="model.currentusername" #currentusername="ngModel" required>
-                                    -->
-                                    <input type="text" placeholder="Username/Email"   name="currentusername" [(ngModel)]="model.currentusername" #currentusername="ngModel" required/>
-                                    <div *ngIf="f.submitted && !currentusername.valid" class="help-block">Username is required</div>
-    
-                               
-                               </div>
+            <div class="row">
+                <div id="icon-box">
+                    <i class="fa fa-user-circle-o" aria-hidden="true" id="icon"></i>
+                </div> 
+                <input type="text" placeholder="Username/Email"  
+                name="currentusername" [(ngModel)]="model.currentusername" 
+                #currentusername="ngModel" required/>
+                <div *ngIf="f.submitted && !currentusername.valid" class="help-block">Username is required</div>
+            </div>
                                <br/>
                                <div class="row">
                                     <div id="icon-box">
